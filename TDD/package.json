@@ -1,0 +1,17 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "Ejemplo TDD con Mocha y Chai",
+  "main": "tdd.js",
+  "scripts": {
+    "start": "node src/tdd.js",
+    "test-recursive":"node_modules/mocha/bin/mocha --recursive ./test/*.js",
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "author": "Spizzirri Damian",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
