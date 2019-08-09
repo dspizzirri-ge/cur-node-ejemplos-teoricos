@@ -5,13 +5,16 @@
   "main": "tdd.js",
   "scripts": {
     "start": "node src/tdd.js",
-    "test-recursive":"node_modules/mocha/bin/mocha --recursive ./test/*.js",
+    "test-recursive": "node_modules/mocha/bin/mocha --recursive ./test/*.js",
     "test": "node_modules/mocha/bin/mocha"
   },
   "author": "Spizzirri Damian",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
     "mocha": "^6.2.0"
   }
 }

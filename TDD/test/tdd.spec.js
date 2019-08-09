@@ -1,9 +1,20 @@
-const assert = require('chai').assert;
-//const assert = require('chai').expect;
-//const assert = require('chai').should;
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { app } = require('../src/tdd');
 
-describe('Prueba', ()=>{
-    it('console.log', ()=>{
-        console.log(`Hola Mundo`);
+chai.use(chaiHttp);
+chai.should();
+
+describe('Pruebas HTTP', ()=>{
+    describe('GET /', ()=>{
+        it('deberia obtener todos los alumnos', (done)=>{
+           chai.request(app)
+            .get('/')
+            .end((err, res)=>{
+                res.should.have.status(200);
+                res.body.should.be.a({});
+                done();
+            });
+        });
     });
 });
