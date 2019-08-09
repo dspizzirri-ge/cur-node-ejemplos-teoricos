@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Formulario </h1>
+
+    <form action="http://localhost:3000/guardardatos" method="POST">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" value="">
+        </div>
+        <div>
+            <label for="correo">Correo</label> 
+            <input id="correo" name="correo" type="email" value="">
+        </div>
+        <div>
+            <label for="msg">Comentarios:</label>
+            <textarea id="msg" name="msg"></textarea>
+        </div> 
+        <div class="button">
+            <button type="submit">Enviar datos</button>
+        </div>   
+    </form>
+    <script src="public/js/scripts.js"></script>
+</body>
+</html>
