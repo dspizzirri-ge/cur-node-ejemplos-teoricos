@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/tdd.js",
     "test-recursive": "node_modules/mocha/bin/mocha --recursive ./test/*.js",
+    "test-nodemon": "nodemon --ext js --watch ./ --exec 'node_modules/mocha/bin/mocha ./test' --delay 1",
     "test": "node_modules/mocha/bin/mocha"
   },
   "author": "Spizzirri Damian",
