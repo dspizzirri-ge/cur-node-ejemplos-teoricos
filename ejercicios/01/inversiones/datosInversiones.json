@@ -1,0 +1,22 @@
+[
+    {"nombre":"Donovan","dinero":2061.4,"inversion":4400.1,"ganancia":4196.51},
+    {"nombre":"Rae","dinero":1820.05,"inversion":7405.53,"ganancia":7323.32},
+    {"nombre":"Baird","dinero":5211.38,"inversion":8770.56,"ganancia":6936.28},
+    {"nombre":"Tania","dinero":9522.43,"inversion":8782.06,"ganancia":1339.1},
+    {"nombre":"Nelson","dinero":7945.74,"inversion":6193.94,"ganancia":2343.92},
+    {"nombre":"Shields","dinero":7793.62,"inversion":4615.46,"ganancia":9834.39},
+    {"nombre":"Melissa","dinero":8198.37,"inversion":5428.16,"ganancia":1749.51},
+    {"nombre":"Gilbert","dinero":2253.13,"inversion":1096.74,"ganancia":3766.3},
+    {"nombre":"Lindsey","dinero":8622.5,"inversion":7242.02,"ganancia":1827.39},
+    {"nombre":"Meyer","dinero":3192.41,"inversion":3201.2,"ganancia":5136.84},
+    {"nombre":"Arnold","dinero":9609.97,"inversion":8234.89,"ganancia":3921.85},
+    {"nombre":"Malinda","dinero":3213.89,"inversion":6336.35,"ganancia":1841.35},
+    {"nombre":"Annabelle","dinero":7842.05,"inversion":9280.95,"ganancia":1028.64},
+    {"nombre":"Nadine","dinero":9195.74,"inversion":8100.77,"ganancia":9225.18},
+    {"nombre":"Campos","dinero":8188.82,"inversion":3424.49,"ganancia":8216.61},
+    {"nombre":"Howard","dinero":3321.95,"inversion":7035.96,"ganancia":1382.99},
+    {"nombre":"Gutierrez","dinero":1866.33,"inversion":9797.34,"ganancia":7638.33},
+    {"nombre":"Rivers","dinero":3204.74,"inversion":8215.94,"ganancia":4539.27},
+    {"nombre":"Clare","dinero":7886.57,"inversion":7582.29,"ganancia":7448.65},
+    {"nombre":"Brittany","dinero":1958.94,"inversion":4104.44,"ganancia":7525.17}
+]
