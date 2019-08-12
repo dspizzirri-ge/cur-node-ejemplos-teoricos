@@ -20,9 +20,11 @@ function crear(dbb, data){
     }
 }
 
-function eliminar(dbb, doc){
+function eliminar(dbb, data){
     try{
-        dbb.remove(doc);
+        if(Array.isArray(data))
+        return dbb.bulkDocs(data);
+    return dbb.remove(data);
     }catch(e){
         throw Error(e);
     } 

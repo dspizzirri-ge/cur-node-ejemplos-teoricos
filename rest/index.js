@@ -57,29 +57,21 @@ app.delete('/resultados/',
     }
 });
 
-app.delete('/resultados/:equipo/local', 
+app.delete('/resultados/equipo/:equipo', 
 (req, res, next) => {
     try{
         documentos.consultar(db, req.params.equipo)
-        .then(doc => documentos.eliminar(db, doc))
+        .then(doc => {
+            let docsABorrar = doc.docs;
+            docsABorrar = docsABorrar.map(e => e = { _deleted: true, _id: e._id, _rev: e._rev });
+            documentos.eliminar(db, docsABorrar);
+        })
         .then(doc => res.json(doc))
         .catch(err => { res.status(500); res.json({ error: err });});
     }catch(e){
         next(e);
     }
 });
-
-app.delete('/resultados/:id/', 
-    (req, res, next) => {
-        try{    
-            db.get(req.params.id)
-            .then(doc => db.remove(doc))
-            .then(doc => res.json(doc))
-            .catch(err => { res.status(500); res.json({ error: err });});
-        }catch(e){
-            next(e);
-        }
-    });
 
 app.put('/resultado/', 
     (req, res, next) => {
