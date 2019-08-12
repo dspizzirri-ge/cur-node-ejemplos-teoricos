@@ -1,0 +1,40 @@
+1.Dado un array de datos sobre valores medios mensuales de temperatura en una ciudad X, 
+realizar una funcion que:
+
+* Filtrar las ciudades con temperaturas superiores a 15;
+* Calcular el promedio de las temperaturas
+
+2.Dado un array de datos sobre saldo en cuenta, saldo invertido y monto ganado,
+por una persona X, en un banco X,
+realizar una funcion que:
+
+* Calcular el total de saldo invertido y saldo ganado.
+* Modificar el saldo de los objetos, poniendolos en dolares, 
+si suponemos que los valores estan en pesos y el dolar vale $65  
+
+/*
+
+https://www.json-generator.com/
+
+
+[
+  '{{repeat(20)}}',
+  {
+    nombre: '{{firstName()}}',
+    dinero: '{{floating(1000, 10000, 2)}}',
+    inversion: '{{floating(1000, 10000, 2)}}',
+    ganancia: '{{floating(1000, 10000, 2)}}'
+  }
+]
+
+[
+  '{{repeat(20)}}',
+  {
+    ciudad: '{{city()}}',
+    anio: '{{integer(1990, 2018)}}',
+    mes: '{{integer(0, 11)}}',
+    temperatura: '{{integer(-10, 45)}}'
+  }
+ ]
+
+*/

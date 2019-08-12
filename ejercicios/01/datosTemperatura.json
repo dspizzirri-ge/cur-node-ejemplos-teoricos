@@ -1,0 +1,22 @@
+[
+    {"ciudad":"Beechmont","anio":2004,"mes":3,"temperatura":24},
+    {"ciudad":"Wattsville","anio":2007,"mes":0,"temperatura":42},
+    {"ciudad":"Churchill","anio":1994,"mes":11,"temperatura":1},
+    {"ciudad":"Nutrioso","anio":2014,"mes":5,"temperatura":30},
+    {"ciudad":"Tooleville","anio":2014,"mes":4,"temperatura":9},
+    {"ciudad":"Kansas","anio":2007,"mes":6,"temperatura":-1},
+    {"ciudad":"Rodman","anio":2009,"mes":2,"temperatura":0},
+    {"ciudad":"Marysville","anio":2003,"mes":7,"temperatura":38},
+    {"ciudad":"Yorklyn","anio":2012,"mes":6,"temperatura":0},
+    {"ciudad":"Stagecoach","anio":2007,"mes":10,"temperatura":21},
+    {"ciudad":"Chelsea","anio":2012,"mes":4,"temperatura":-7},
+    {"ciudad":"Slovan","anio":1994,"mes":6,"temperatura":21},
+    {"ciudad":"Sterling","anio":1994,"mes":3,"temperatura":10},
+    {"ciudad":"Longbranch","anio":2015,"mes":10,"temperatura":11},
+    {"ciudad":"Conestoga","anio":2014,"mes":1,"temperatura":11},
+    {"ciudad":"Elbert","anio":2006,"mes":4,"temperatura":13},
+    {"ciudad":"Abrams","anio":2003,"mes":9,"temperatura":-6},
+    {"ciudad":"Lund","anio":2016,"mes":6,"temperatura":41},
+    {"ciudad":"Fairacres","anio":1998,"mes":10,"temperatura":-4},
+    {"ciudad":"Kerby","anio":1990,"mes":3,"temperatura":11}
+]

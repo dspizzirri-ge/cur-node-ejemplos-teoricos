@@ -1,0 +1,8 @@
+Crear una api rest que pueda
+
+* Hacer un CRUD sobre resultados de un partido entre dos equipos ( Futbol, Basket, Rugby, etc )
+
+* Agregarle un middleware que vefique que se han enviado todos los datos necesarios.
+
+* Usar morgan, body-parser.
+
