@@ -29,3 +29,7 @@ console.log(`Total saldo: $${totalSaldo}`);
 console.log(`Total saldo: $${totalInvertido}`);
 console.log(`Total saldo: $${totalGanado}`);
 console.log(convertirMoneda(inversiones, 65));
+
+module.exports = {
+    sumarCampoNumerico
+}
