@@ -1,1 +1,5 @@
-Hacer pruebas
+Crear una funcion que reciba un numero o una cadena y que permita:
+* Validar si es o no un numero --> expect(4).isNumber();
+* Validar si es o no igual a otro valor --> expect(4).toEqual(4);
+* Validar si es nulo --> expect(4).isNull();
+* Validar si la cadena esta vacia --> expect("AAA").isEmpty();
