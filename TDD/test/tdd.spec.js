@@ -30,22 +30,20 @@ describe('Pruebas HTTP', () => {
                     done();
                 });
         });
-
-        it("", () => {
-
-            expect(4).to.be.a('number');
-            expect(4).not.to.be.a('string');
-            expect(2000).to.have.least(1900);
-            expect(2000).to.equal(2000);
-
-            expect(function () { }).to.not.throw();
-            expect({ a: 1 }).to.not.have.property('b');
-            expect([1, 2]).to.be.an('array').that.does.not.include(3);
-            expect(2).to.equal(2); // Recommended
-            expect(2).to.not.equal(1); // Not recommended
-            expect({ a: { b: ['x', 'y'] } }).to.have.nested.property('a.b[1]');
-            expect({ a: { b: ['x', 'y'] } }).to.nested.include({ 'a.b[1]': 'y' })
-
+        
+        it("Deberia crear la materia 'Algebra' de la catedra '2190'", (done) => {
+            chai.request(app)
+                .post('/materia/algebra/2190')
+                .send({ profesor: "profesor3" })
+                .end((err, res) => {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('materia').to.be.equal('algebra');
+                    expect(res.body).to.have.property('curso').to.be.equal('2190');
+                    expect(res.body).to.have.property('horasSemanales').to.not.be.NaN;
+                    expect(res.body).to.have.property('horasSemanales').to.be.least(1);
+                    expect(res.body).to.have.property('profesorTitular').to.be.equal('profesor3');
+                    done();
+                });
         });
     });
 });

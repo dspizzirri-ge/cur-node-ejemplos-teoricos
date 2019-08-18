@@ -1,4 +1,5 @@
 const http = (url)=>{
+    console.log(a);
     return {
         get(){ return `GET: ${url}`},
         post(){ return `POST: ${url}`}

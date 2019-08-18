@@ -11,19 +11,18 @@
 
 const inversiones = require("./datosInversiones.json");
 
-const sumarCampoNumerico = (array, campo)=>array.reduce((anterior, actual, indice)=> anterior + actual[campo], 0 );
+const sumarCampoNumerico = (array, campo)=>array.reduce((anterior, actual, indice)=> anterior += actual[campo], 0 );
 const totalSaldo = sumarCampoNumerico(inversiones, "dinero");
 const totalInvertido = sumarCampoNumerico(inversiones, "inversion");
 const totalGanado = sumarCampoNumerico(inversiones, "ganancia");
 
-const convertirMoneda = 
+const convertirMoneda =     
     (array, precioDolar)=>array.map(e => e = { 
             ...e,
             dinero: e.dinero/precioDolar,
             inversion: e.inversion/precioDolar,
             ganancia: e.ganancia/precioDolar
         });
-
 
 console.log(`Total saldo: $${totalSaldo}`);
 console.log(`Total saldo: $${totalInvertido}`);

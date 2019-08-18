@@ -1,5 +1,5 @@
 function enviarMensaje(origen, texto, ...destinatarios) {
-
+   
     if (Array.isArray(destinatarios)) {
         for (destino of destinatarios) {
             let mensaje = { origen, texto, destino }

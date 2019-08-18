@@ -2,7 +2,7 @@ const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 const arrayMap = array.map(e => e ** 2);
 const arrayFilter = array.filter(e => e % 2 == 0);
 const arrayFind = array.find(e => e != 0 && e % 2 == 0);
-const reduce = array.reduce((anterior, actual, indice) => anterior += actual);
+const reduce = array.reduce((anterior, actual, indice) => anterior += actual, 20);
 
 
 console.log(`ARRAY: ${array}`);

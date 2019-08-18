@@ -33,7 +33,7 @@ app.post('/materia/:materia/:curso', (req, res, next) => {
     const materia = req.params.materia;
     const curso = req.params.curso;
     const horasSemanales = 8;
-    const profesorTitular = "Profesor1";
+    const profesorTitular = req.body.profesor;
     const alumnos = [
         { nombre: "alumno1", apellido: "apellido1", dni: "22.222.222" },
         { nombre: "alumno2", apellido: "apellido2", dni: "22.222.226" },

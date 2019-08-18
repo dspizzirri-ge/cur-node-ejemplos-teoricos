@@ -46,7 +46,7 @@ const it = (texto, callback)=> {
     console.log(`${resultado}| ${texto}`);
 }
 
-it("4 no es 5", ()=>evaluar(4).esIgualA(5));
+it("4 es 5", ()=>evaluar(4).esIgualA(5));
 it("A4 es numero", ()=>evaluar('A4').esUnNumero());
 it("4 no es 4", ()=>evaluar(4).not.esIgualA(4));
 it("null es nulo", ()=>evaluar(null).esNulo());

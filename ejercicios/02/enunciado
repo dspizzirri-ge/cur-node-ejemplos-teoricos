@@ -2,7 +2,44 @@ Crear una api rest que pueda
 
 * Hacer un CRUD sobre resultados de un partido entre dos equipos ( Futbol, Basket, Rugby, etc )
 
-* Agregarle un middleware que vefique que se han enviado todos los datos necesarios.
+* Para simular utilizar una API a la base de datos, podemos crear una promesa que me devuelva 
+true si pudo hacer el post, delete, etc.
+false sino pudo 
+
+objeto:{ local, visitante, estadio, resultado, fecha }
+
+    * Buscar por equipo. --> func: buscar(equipo)
+    * Buscar por fecha. --> func: buscar(fecha)
+    * Guardar resultado de partido. --> func: guardar(equipo)
+    * Modificar resultado de partido. --> func: modificar(id, equipo)
+    * Eliminar resultado de partido. --> func: eliminar(equipoa, equipob)
+    * Eliminar todos los resultados de un equipo. --> func: eliminar(equipo) 
+    
+    * Todos los POST deben devolver 201.
+    * Crear test unitarios para todas las funciones. 
+    --- Al menos dos test para cada uno, uno por verdadero y otro por falso.
+
+    * Crear un manejador de error.
+
+    Extra:
+    ------
+    * Devolver la tabla de posiciones. ---> func crearTabla(resultados)  
+
+Estructura:
+    index.js
+    BBDD
+        bbdd.js
+        funciones.js
+    mocks
+        mocks.js
+    test
+        funciones.spec.js
+        index.spec.js
+
 
 * Usar morgan, body-parser.
+
+* Agregarle un middleware que vefique que se han enviado todos los datos necesarios.
+
+
 

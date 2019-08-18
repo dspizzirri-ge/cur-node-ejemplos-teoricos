@@ -12,7 +12,6 @@ let computadora = {
 var laptop1 = { ...computadora } // shallow clone
 var laptop2 = JSON.parse(JSON.stringify(computadora)) // deep clone
 
-/*
 laptop1.precio = 4000;
 console.log("computadora.precio: ", computadora.precio);
 console.log("laptop1.precio: ", laptop1.precio);
@@ -20,8 +19,9 @@ console.log("laptop1.precio: ", laptop1.precio);
 laptop1.software.so = "Mint 18";
 console.log("computadora.software.so: ", computadora.software.so);
 console.log("laptop1.software.so: ", laptop1.software.so);
-*/
 
+
+/*
 laptop2.precio = 4000;
 console.log("computadora.precio: ", computadora.precio);
 console.log("laptop2.precio: ", laptop2.precio);
@@ -29,3 +29,4 @@ console.log("laptop2.precio: ", laptop2.precio);
 laptop2.software.so = "Mint 18";
 console.log("computadora.software.so: ", computadora.software.so);
 console.log("laptop2.software.so: ", laptop2.software.so);
+*/
