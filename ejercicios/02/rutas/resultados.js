@@ -46,6 +46,7 @@ router.post('/',
     });
 
 router.delete('/',
+    checkCookie,
     (req, res, next) => {
         try {
             db.destroy()
@@ -57,6 +58,7 @@ router.delete('/',
     });
 
 router.delete('/equipo/:equipo',
+    checkCookie,
     (req, res, next) => {
         try {
             documentos.consultar(db, req.params.equipo)
@@ -73,6 +75,7 @@ router.delete('/equipo/:equipo',
     });
 
 router.put('/',
+    checkCookie,
     (req, res, next) => {
         try {
             db.put(req.body)
