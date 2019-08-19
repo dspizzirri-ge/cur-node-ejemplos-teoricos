@@ -10,6 +10,7 @@ router.post('/login',
                 else
                     req.session.role = 'guest';
             }
+            res.status(200);
             res.json({ role: req.session.role });
             res.end();
         } catch (err) {
@@ -26,6 +27,7 @@ router.get('/logout',
             } else {
                 res.json({ error: "No existe session" });
             }
+            res.status(200);
             res.end();
         } catch (err) {
             next(err);

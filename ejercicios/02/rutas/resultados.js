@@ -6,10 +6,6 @@ const PouchDB = require('pouchdb');
 PouchDB.plugin(require('pouchdb-find'));
 const db = new PouchDB('torneo2019');
 
-db.info()
-    .then((info) => console.log(info))
-    .catch((e) => console.log(e));
-
 router.get('/',
     (req, res, next) => {
         try {
