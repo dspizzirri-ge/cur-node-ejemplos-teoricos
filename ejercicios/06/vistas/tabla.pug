@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', rel='stylesheet')
+        
+    body
+        include navbar.pug   
+      
+        h3= title
+        div.container
+            p= parrafo1
+            table(class='table')
+                thead
+                    tr
+                        th
+                            span= 'POSICION'
+                        th
+                            span= 'EQUIPO'
+                        th
+                            span= 'PUNTOS'
+                tbody
+                    each posicion in posiciones
+                        tr
+                            td
+                                span= posicion.pos 
+                            td
+                                span= posicion.equipo 
+                            td
+                                span= posicion.puntos 

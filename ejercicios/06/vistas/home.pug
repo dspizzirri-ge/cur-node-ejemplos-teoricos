@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', rel='stylesheet')
+        
+    body
+        include navbar.pug   
+      
+        h3= title
+        div.container
+            p= parrafo1
+            table(class='table')
+                thead
+                    tr
+                        th
+                            span= 'LOCAL'
+                        th
+                            span= 'RESULTADO'
+                        th
+                            span= 'VISITANTE'
+                tbody
+                    each resultado in resultados
+                        tr
+                            td
+                                span= resultado.local 
+                            td
+                                span= resultado.resultado 
+                            td
+                                span= resultado.visitante 

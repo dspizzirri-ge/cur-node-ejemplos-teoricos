@@ -1,6 +1,5 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const PouchDB = require('pouchdb');
 const app = require('../index');
 
 chai.use(chaiHttp);

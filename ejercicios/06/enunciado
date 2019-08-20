@@ -1,1 +1,5 @@
-Hacer pruebas
+Hacer un servidor que sea capaz de mostrar de vistas distinas de una pagina web.
+- Pantallas 
+    Home: que muestre los resultados de la ultima fecha.
+    Tabla: que muestre la clasificacion de los equipos los puntos obtenidos.
+    Admin: que permita eliminar equipos
