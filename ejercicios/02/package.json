@@ -16,7 +16,7 @@
     "chai-spies": "^1.0.0",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "pouchdb": "^7.1.1",
     "pouchdb-find": "^7.1.1"
   },
